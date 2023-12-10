@@ -1,3 +1,55 @@
 .App {
   text-align: center;
 }
+
+.container {
+  padding: 0.002%;
+  margin: 0.2% 0;
+}
+
+.users-message{
+  border-style: solid;
+  border-width: thin;
+  border-radius: 0.5em;
+  padding-left: 0.5%;
+  margin: 0.2% 0;
+}
+
+.message-inputs{
+  position: fixed;
+  bottom: 0;
+  display: flex;
+  width: 100%;
+  background-color: #B0B0B0;
+  height: 5%;
+  align-items: center
+}
+       
+.message-inputs .message-input[type=text] {
+ width: 90%;
+ overflow: hidden;
+ border: 2px solid black;
+ height: 70%;
+ margin-top: 0.2%;
+ margin-bottom: 0.2%;
+ font-size: medium;
+}
+
+.message-inputs .send-button{
+   background-color: #B0B0B0; 
+   color: black;
+   font-size: large;
+   font-weight: bolder;
+   border: 2px solid #B0B0B0;
+   margin-left: 2px;
+   width: 10%;
+   overflow: hidden;
+   justify-content: center;
+}
+ 
+.send-button:hover {
+ background-color: #DCDCDC;
+ color: white;
+ cursor: pointer;
+ height: 100%;
+}

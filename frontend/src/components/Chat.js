@@ -5,6 +5,7 @@ import SockJS from 'sockjs-client';
 import Stomp from 'stompjs';
 import { properties } from "../properties/Properties.js";
 import MessageList from "./MessageList.js";
+import MessageInput from "./MessageInput.js";
 
 function Chat({ isActive, username, ...props }) {
 
@@ -41,11 +42,16 @@ function Chat({ isActive, username, ...props }) {
 
     }, [messages, stompClient]);
 
+    const handleSendMessage = (inputMessage) => {
+        stompClient.send('/app/chat.sendMessage', {}, JSON.stringify({ text: inputMessage, sender: username }));
+    };
+
     return (
         <>
             {isActive &&
                 ((<>
                     <MessageList messages={messages} username={username} />
+                    <MessageInput onSendMessage={handleSendMessage} />
                 </>))
             }
         </>
