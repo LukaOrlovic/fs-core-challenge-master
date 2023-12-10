@@ -1,0 +1,16 @@
+C:\Users\Luka\Documents\fs-core-challenge-master\backend\src\main\java\com\doodle\backend\model\MessageType.java
+C:\Users\Luka\Documents\fs-core-challenge-master\backend\src\main\java\com\doodle\backend\repository\MessageRepository.java
+C:\Users\Luka\Documents\fs-core-challenge-master\backend\src\main\java\com\doodle\backend\config\WebSocketConfig.java
+C:\Users\Luka\Documents\fs-core-challenge-master\backend\src\main\java\com\doodle\backend\model\Message.java
+C:\Users\Luka\Documents\fs-core-challenge-master\backend\src\main\java\com\doodle\backend\web\controller\ChatRestController.java
+C:\Users\Luka\Documents\fs-core-challenge-master\backend\src\main\java\com\doodle\backend\web\controller\WebController.java
+C:\Users\Luka\Documents\fs-core-challenge-master\backend\src\main\java\com\doodle\backend\web\controller\ChatSocketController.java
+C:\Users\Luka\Documents\fs-core-challenge-master\backend\src\main\java\com\doodle\backend\BackendChallengeApplicationStarter.java
+C:\Users\Luka\Documents\fs-core-challenge-master\backend\src\main\java\com\doodle\backend\web\errorhandler\RestResponseEntityExceptionHandler.java
+C:\Users\Luka\Documents\fs-core-challenge-master\backend\src\main\java\com\doodle\backend\model\HealthResponse.java
+C:\Users\Luka\Documents\fs-core-challenge-master\backend\src\main\java\com\doodle\backend\service\MessageService.java
+C:\Users\Luka\Documents\fs-core-challenge-master\backend\src\main\java\com\doodle\backend\exception\BackendChallengeException.java
+C:\Users\Luka\Documents\fs-core-challenge-master\backend\src\main\java\com\doodle\backend\LogCodes.java
+C:\Users\Luka\Documents\fs-core-challenge-master\backend\src\main\java\com\doodle\backend\exception\error\ErrorDetails.java
+C:\Users\Luka\Documents\fs-core-challenge-master\backend\src\main\java\com\doodle\backend\exception\ClientNotFoundException.java
+C:\Users\Luka\Documents\fs-core-challenge-master\backend\src\main\java\com\doodle\backend\domain\Message.java
