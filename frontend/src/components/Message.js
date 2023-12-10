@@ -3,7 +3,6 @@ import "../App.css";
 import React from 'react';
 
 const Message = ({ message, isUsersMessage }) => {
-    console.log(isUsersMessage);
     return (
         <div className={isUsersMessage ? 'users-message' : 'container'}>
             <p style={{ fontWeight: "lighter"}}>{message.sender}</p>

@@ -1,8 +1,8 @@
 import "./App.css";
 
 import React, { useEffect, useState } from 'react';
-import Login from "./components/Login";
 import Chat from "./components/Chat";
+import Login from "./components/Login";
 import axios from 'axios';
 import { properties } from "./properties/Properties.js";
 

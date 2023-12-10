@@ -2,13 +2,13 @@ import "../App.css";
 
 import React, { useEffect, useRef } from 'react';
 import Message from './Message';
+import NoMessages from './NoMessages';
 
 const MessageList = ({ messages, username }) => {
     const messagesEndRef = useRef(null);
 
     useEffect(() => {
         scrollToBottom();
-        console.log(messages);
     }, [messages]);
 
     const scrollToBottom = () => {
@@ -17,7 +17,7 @@ const MessageList = ({ messages, username }) => {
 
     return (
         <div style={{marginBottom: '3%'}}>
-            {messages.length === 0 || messages.map((msg, index) => (
+            {messages.length === 0 ? <NoMessages/> : messages.map((msg, index) => (
                 <Message key={index} message={msg} isUsersMessage={msg.sender === username} />
             ))}
             <div ref={messagesEndRef} />
