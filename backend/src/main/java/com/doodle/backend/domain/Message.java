@@ -1,19 +1,21 @@
 package com.doodle.backend.domain;
 
-import java.util.UUID;
+import com.doodle.backend.model.MessageType;
+import lombok.Data;
+import org.springframework.data.annotation.Id;
+import org.springframework.data.mongodb.core.mapping.Document;
 
+@Data
+@Document(collection = "messages")
 public class Message {
 
-    private UUID id;
+    @Id
+    private String id;
+    private String sender;
+    private String text;
+    private String timestamp;
+    private MessageType type;
 
     public Message() {
-    }
-
-    public UUID getId() {
-        return id;
-    }
-
-    public void setId(UUID id) {
-        this.id = id;
     }
 }
