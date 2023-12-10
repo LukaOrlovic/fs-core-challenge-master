@@ -2,6 +2,7 @@ import "./App.css";
 
 import React, { useEffect, useState } from 'react';
 import Login from "./components/Login";
+import Chat from "./components/Chat";
 import axios from 'axios';
 import { properties } from "./properties/Properties.js";
 
@@ -34,6 +35,11 @@ function App() {
       <Login
         handleUsernameSubmit={handleUsernameSubmit}
         isActive={activeIndex === 0}
+      />
+      <Chat
+        username={username}
+        isActive={activeIndex === 1}
+        oldMessages={messages}
       />
     </>
   );
