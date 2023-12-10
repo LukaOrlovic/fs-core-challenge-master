@@ -1,59 +1,31 @@
 # The challenge (Fullstack Engineer)
-We want you to build a simple chat application which is able to send messages and display messages
-from all senders:
 
-<img src="frontend/chat.png" alt="Chat application look" width="250"/>
+This is a chat application built using Java and React.js.
+Frontend and backend are connected using WebSockets because of the bidirectional way of working and because they eliminate the need for frequent requests and responses.
+For the database, MongoDB has been chosen because of the flexible and schema-less document model. Also, it is designed to scale horizontally by distributing data across multiple servers. 
 
-We'd like you to create a simple backend with an API for messages that reads and writes data from a
-database, and a frontend to interact with that API.
+Things not addressed in the current version:
 
-Your API should have the following features:
+1. No tests have been written
+2. User interface could be more responsive, and tested on more browsers
+3. Timezone issue is not addressed (e.g. date and time saved are server's, and could potentially be wrong for a client in a different timezone)
+4. Health check has not been implemented and could cause issues
+5. Handling errors is not done
+6. Login (authentication/authorization) is not implemented
+7. Saving messages could be done in a separate thread or caching messages (point 8) and then saving to the database
+8. Caching messages in Redis could be a potential for future improvements
+9. Sending media is not available and could be potentially requested by clients (AWS S3 could be used, especially due to its speed and being able to upload directly using the signed URL and also due to the announcement of Amazon S3 Express One Zone)
+10. This is a chat application with only one chatroom, users could request 1:1 chats, which is currently not developed
+
+
+Starting the application:
 
 ```
-1. Receive new messages from the client
-2. List all messages in chronological order for the client
+1. Download the project
+2. Have Docker running locally
+3. Open your CLI and navigate to the root of the downloaded project
+4. Run command: > docker-compose build
+5. After it has finished run: > docker-compose up
+6. Open http://localhost:3000/ and login
+
 ```
-
-The design of the API is up to you.
-
-Now, when it comes to the frontend, you should use your HTML and CSS skills to present the messages
-as depicted in the wireframe. We would like to test your knowledge of these technologies, 
-so we do not recommend using UI component libraries (material-ui, antd, ...).
-
-Your solution should be runnable locally using `docker-compose`. Don't forget to include all the
-dependencies of your service in the composer file, including your database system of choice.
-
-## Rules
-We understand your time is precious and would not want you to spend more than **3 to 5 hours** on this
-over the span of **1 week max**.
-
-This repository includes codebase with Spring Boot for backend service and React for frontend.
-You are free to change the language or framework just please use a JVM language, preferably Java for your backend service. Feel free to use any framework,
-like Spring in this example. For the frontend, please use JavaScript (Vanilla JS, React, ...). We want you
-to provide a responsive implementation. Keep in mind that Doodle is used worldwide and has to work on
-commonly used browsers.
-
-## What we expect
-
-It is OK if the challenge is not completed. Try to prioritize it by what you think is more important. Tell us
-what motivated your technology choices, how you tackled the task, what you would do differently were you
-given more time, what you would differently a second time around, etc.
-
-Here are some pointers for you of things we will be looking for:
-
-
-* Commit often, write useful commit messages
-* Code readability
-* Performance: it should load reasonably fast on a mobile device
-* Accessibility: the more usable the interface, the better
-* Design: we are not looking for pixel-pushing, but we love attention to detail
-
-## Next steps
-
-Send an email with a link to your repository solution to `code-challenge@doodle.com`.
-
-Make sure your email has the following subject: **FS-<yourname>**. So for example, if your name were
-"Paul Smith", your email subject would be **FS-Paul Smith**
-
-We will review your solution, we strive to get back to you in `1 week`. Sometimes it might take more.
-What we expect
