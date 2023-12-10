@@ -24,8 +24,8 @@ Starting the application:
 1. Download the project
 2. Have Docker running locally
 3. Open your CLI and navigate to the root of the downloaded project
-4. Run command: > docker-compose build
-5. After it has finished run: > docker-compose up
+4. Run command: docker-compose build
+5. After it has finished run: docker-compose up
 6. Open http://localhost:3000/ and login
 
 ```
